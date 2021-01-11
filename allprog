@@ -1,0 +1,1824 @@
+WEEK-2
+a. <! - - HTML Program to design login page-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+input[type=text], input[type=password]
+{
+border: none;
+border-bottom: 2pxblack;
+width=50%;
+height:25px;
+}
+body{
+background-color:#32a88f;
+}
+form,h1
+{ position:relative;
+top:190px;
+}
+a{ color:pin;
+font-size:18px;
+}
+</style>
+</head>
+<body align="center">
+<h1 style="color:pink"><b>Login</b></h1><br>
+<form name="logform" method="post">
+<input type="text" name="logun" placeholder="Username" size="30" maxlength="30">
+<br><br>
+<input type="password" name="logpwd" placeholder="Password" size="30"
+maxlength="30">
+<br><br><br><br>
+<input type="button" value="Sign in">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="forgotpwd.html">forgot password? </a>
+</form>
+</body>
+</html>
+Output:
+b. <! - - HTML Progarmto design registration page -->
+<html>
+<body align="center">
+<h1><b>Registration Form</b></h1><br>
+<form name="regform" method="post">
+FIRST NAME:<input type="text" name="un" size="20" maxlength="30"><br><br>
+MIDDLE NAME:<input type="text" name="un" size="20" maxlength="30"><br><br>
+LAST NAME: <input type="text" name="un" size="20"
+maxlength="30"><br><br>COURSE :<select>
+<option selected disabled>Select one</option>
+<option value="bt">BTECH</option>
+<option value="mt">MTECH</option>
+</select><BR><BR> Gender<BR>
+<input type="radio"> Male <br>
+<input type="radio"> Female <br>
+<input type="radio"> Other <br><br><br>
+E-Mail: <input type="text" name="mail" placeholder="Email" size="20" maxlength="30">
+<br><br>
+ADDRESS: <input type="text" name="loc" placeholder="Address"size="20"
+maxlength="30"><br><br>
+MOBILENO:<inputtype="text"name="phno"placeholder="ContactNumber"size="20"
+maxlength="30"><br><br>
+PASSWORD:<inputtype="password"name="pwd"placeholder="password"size="20"
+maxlength="30"><br><br>
+RE-TYPE PASSWORD:<input type="password" name="cpwd" placeholder="Confirm
+password" size="20" maxlength="30"><br><br>
+<input type="submit" value="SUBMIT"><br>
+</form>
+</body>
+</html>
+Output:
+c. <! - - HTML Program to design feedback form -->
+<html>
+<head>
+</head>
+<body>
+<CENTER>
+<br><br>
+<h3>FEEDBACK FORM</H3>
+<form method="post">
+<TABLE height="400"width="400">
+<tr>
+<th>First Name</th>
+<tdalign="center"><input type="text" placeholder="fname"></td>
+</tr>
+<tr>
+<th>Last Name</th>
+<tdalign="center"><input type="text" placeholder="lname"></td>
+</tr>
+<tr>
+<th>E-Mail</th>
+<tdalign="center"><input type="email" name="mail" placeholder="E-Mail"></td>
+</tr>
+<tr>
+<th>Country</th>
+<tdalign="center">
+<select>
+<option selected disabled>Select one</option>
+<option value="in ">India</option>
+<option value="USA">USA</option>
+</select>
+</td></tr>
+<tr>
+<th>Feedback:</th>
+<tdalign="center">
+<textarea rows="10" cols="30" placeholder="Give your feedback here "></textarea>
+</td></tr>
+<tr>
+<TD ALIGN="CENTER">
+<input type="submit" value="SUBMIT"></td>
+</tr>
+</TABLE>
+</form>
+</CENTER>
+</body>
+</html>
+Output:
+WEEK-3
+a. <! - -CSS Program to work with background properties-->
+<html>
+<head>
+<style>
+h1{
+background-image:url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree- 736885 340.jpg");
+background-size:100%;
+background-repeat:no-repeat;
+background-color:red; }
+</style>
+</head>
+<body style="background- image:url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree736885 340.jpg'); background-repeat:no-repeat; background-position:bottom center;">
+<br><br>
+<h1 align="center"><font color="pink">Welcome To CSS Background Styles</font></h1>
+</body>
+</html>
+Output:
+<! - -CSS Program to work with border properties- ->
+<html>
+<head>
+<style> h1{
+border-style:dotted; border-color:red; border-width:10; border-radius:5;
+}
+p{border-style:groove ridge dashed inset; border-color:red;
+border-width:8 10;
+}
+</style>
+</head>
+<body>
+<br><br>
+<h1 align="center">CSS Borders</h1><br><br><br>
+<p align="center"><b>Borders with paragraph</b></p>
+</body>
+</html>
+Output:
+b. <! - - Java script program to print multiplication table of the given integer -->
+<html>
+<head>
+<title>JavaScript - Function to Display Table of an entered Number.</title>
+<script type="text/javascript">
+function printTable(){
+var num;
+num=Number(document.getElementById('txtNumber').value);
+for(var i=1; i<=10; i++){
+var pTag= document.getElementById('pPrint');
+pTag.innerHTML += (num)+"*"+(i)+"="+(num*i) + "<br/>"
+}
+}
+</script>
+</head>
+<body style="text-align: center;">
+<h1>JavaScript - Function to Display Table of an entered Number.</h1>
+<p><input type="text" id="txtNumber" placeholder="Enter number"/></p>
+<p><input type="button" value="Print Table." onclick='printTable()'/>
+<!--printnumbers-->
+<pid="pPrint"></p>
+</body>
+</html>
+Output:
+c. <!--Java script program to validate the registration form contents - ->
+Program: Registration-form.html
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Field Label Form Validation using a registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Field label form
+validation using a sample registration form. " />
+<link rel='stylesheet' href='js-field-level-form-validation.css' type='text/css' />
+<script src="field-level-sample-registration-form-validation.js"></script>
+</head>
+<body onload="firstfocus();">
+<h1>JavaScript Field Label Form Validation using a registration form</h1>
+<h2>Use tab key or mouse to go next field</h2><form name='registration'">
+<ul>
+<li><label for="userid">User id [5 to 12 characters] :</label></li>
+<li><input type="text" name="userid" size="12" onblur="userid_validation(5,12)"/></li>
+<li><label for="passid">Password [7 to 12 characters] :</label></li>
+<li><input type="password" name="passid" size="12" onblur="passid_validation(7,12)"/></li>
+<li><label for="username">Name [Alphabates characters] :</label></li>
+<li><input type="text" name="username" size="50" onblur="allLetter()"/></li>
+<li><label for="address">Address [alphanumeric characters] :</label></li>
+<li><input type="text" name="address" size="50" onblur="alphanumeric()"/></li>
+<li><label for="country">Country [Must select a country] :</label></li>
+<li><select name="country" onblur="countryselect()">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></li>
+<li><label for="zip">ZIP Code [numeric characters] :</label></li>
+<li><input type="text" name="zip" onblur="allnumeric()"/></li>
+<li><label for="email">Email [Valid email] :</label></li>
+<li><input type="text" name="email" size="50" onblur="ValidateEmail()" /></li>
+<li><label id="gender">Sex [Select Male or Female] :</label></li>
+<li><input type="radio" name="sex" value="Male" checked /><span>Male</span></li>
+<li><input type="radio" name="sex" value="Female" /><span>Female</span></li>
+<li><label>Language [Optional] :</label></li>
+<li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+<li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
+<li><label for="desc">About [Optional] :</label></li>
+<li><textarea name="desc" id="desc"></textarea></li>
+<li><input type="submit" name="submit" value="Submit" onclick="alert('Form submitted
+successfully')" /></li>
+</ul>
+</form>
+</body>
+</html>
+Output:
+Program: js-field-level-form-validation.css
+h1{
+margin-left: 50px;
+color: navy;
+}
+h2{
+margin-left: 50px;
+color: navy;
+margin-top: -20px;
+}
+form li{
+list-style: none;
+margin-bottom: 5px;
+}
+form ul li label
+{
+float: left;
+clear: left;
+width: 265px;
+text-align: right;
+margin-right: 10px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+form ul li input, select, span
+{
+float: left;
+margin-bottom: 10px;
+border: 1px solid maroon;
+}
+form textarea
+{
+float: left;
+width: 350px;
+height: 150px;
+}
+[type="submit"]
+{
+clear: left;
+margin: 20px 0 0 300px;
+font-size:18px
+}
+Program: field-level-sample-registration-form-validation.js
+// After form loads focus will go to User id field.
+function firstfocus()
+{
+var uid = document.registration.userid.focus();
+return true;
+}
+// This function will validate User id.
+function userid_validation(mx,my)
+{
+var uid = document.registration.userid;
+var uid_len = uid.value.length;
+if (uid_len == 0 || uid_len>= my || uid_len< mx)
+{
+alert("User Id should not be empty / length be between "+mx+" to "+my);
+uid.focus();
+return false;
+}
+// Focus goes to next field i.e. Password.
+document.registration.passid.focus();
+return true;
+}
+// This function will validate Password.
+function passid_validation(mx,my)
+{
+var passid = document.registration.passid;
+var passid_len = passid.value.length;
+if (passid_len == 0 ||passid_len>= my || passid_len< mx)
+{
+alert("Password should not be empty / length be between "+mx+" to "+my);
+passid.focus();
+return false;
+}
+// Focus goes to next field i.e. Name.
+document.registration.username.focus();
+return true;
+}
+// This function will validate Name.
+function allLetter()
+{
+var uname = document.registration.username;
+var letters = /^[A-Za-z]+$/;
+if(uname.value.match(letters))
+{
+// Focus goes to next field i.e. Address.
+document.registration.address.focus();
+return true;
+}
+else {
+alert('Username must have alphabet characters only');
+uname.focus();
+return false;
+}
+}
+// This function will validate Address.
+function alphanumeric()
+{
+var uadd = document.registration.address;
+var letters = /^[0-9a-zA-Z]+$/;
+if(uadd.value.match(letters))
+{
+// Focus goes to next field i.e. Country.
+document.registration.country.focus();
+return true;
+}
+else
+{
+alert('User address must have alphanumeric characters only');
+uadd.focus();
+return false;
+}
+}
+// This function will select country name.
+function countryselect()
+{
+var ucountry = document.registration.country;
+if(ucountry.value == "Default")
+{
+alert('Select your country from the list');
+ucountry.focus();
+return false;
+}
+else
+{
+// Focus goes to next field i.e. ZIP Code.
+document.registration.zip.focus();
+return true;
+}
+}
+// This function will validate ZIP Code.
+function allnumeric()
+{
+var uzip = document.registration.zip;
+var numbers = /^[0-9]+$/;
+if(uzip.value.match(numbers))
+{
+// Focus goes to next field i.e. email.
+document.registration.email.focus();
+return true;
+}
+else{
+alert('ZIP code must have numeric characters only');
+uzip.focus();
+return false;
+}
+}
+// This function will validate Email.
+function ValidateEmail()
+{
+var uemail = document.registration.email;
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(uemail.value.match(mailformat))
+{
+document.registration.desc.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+uemail.focus();
+return false;
+}
+}
+WEEK-4
+a.<! -- Create a DTD document to validate the XML document. - - >
+emp.dtd
+<!ELEMENT emps (emp+) >
+<!ELEMENT emp (id,name,sal,dept,company)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT sal (#PCDATA)>
+<!ELEMENT dept (#PCDATA)>
+<!ELEMENT company (#PCDATA)>
+<!ATTLIST dept grade CDATA #REQUIRED
+block CDATA "A">
+<!ATTLIST id prefix CDATA #IMPLIED>
+<!ENTITY addr "Infosys
+Technoligies,Gachibowli,Hyderabad">Empvalidate.xml
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE emps SYSTEM "emp.dtd">
+<emps>
+<emp>
+<id prefix="INF">101</id>
+<name>Ramesh</name>
+<sal>85900</sal>
+<dept grade="B"> Developer</dept>
+<company>&addr;</company>
+</emp>
+<emp>
+<id>121</id>
+<name>Suresh</name>
+<sal>65900</sal>
+<dept grade="C"> Tester</dept>
+<company>&addr;</company>
+</emp>
+<emp>
+<id>131</id>
+<name>Ganesh</name>
+<sal>185900</sal>
+<dept grade="A">Designer</dept>
+<company>&addr;</company>
+</emp>
+</emps>
+Output:
+b. <! - - Create a XML Schema document to validate the XML document. -->
+books.xsd
+<?xml version="1.0"?>
+<xs:schemaxmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="catalog">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="book" minOccurs="1" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="book">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="1"/>
+<xs:element name="author" type="xs:string" minOccurs="1" maxOccurs="1"/>
+<xs:element name="publisher" type="xs:string" minOccurs="1" maxOccurs="1"/>
+<xs:element name="pages" type="xs:integer" minOccurs="1"maxOccurs="1"/>
+<xs:element name="price" type="xs:decimal" minOccurs="1"maxOccurs="1"/>
+</xs:sequence>
+<xs:attribute name="course" type="xs:string" use="required"/>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+booksdemo.xml
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/css" href="books.css" ?>
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="books.xsd">
+<book course="cse" >
+<title> Web Technologies </title>
+<author>A.Ramesh</author>
+<publisher>DreamTech</publisher>
+<pages>1200</pages>
+<price>2552.75</price>
+</book>
+<book course="cse">
+<title> Operating Systems </title>
+<author>Galvin</author>
+<publisher>TMcH</publisher>
+<pages>900</pages>
+<price>850.50</price>
+</book>
+<book course="ece">
+<title> Control Systems </title>
+<author>DavindHerny</author>
+<publisher>BPB</publisher>
+<pages>600</pages>
+<price>1250.70</price>
+</book>
+</catalog>
+books.css
+title {font-family:serif;color:green;font-size:18pt}
+author{font-family:arial;color:red;font-size:12pt}
+publisher{font-family:arial;color:green;font-size:12pt}
+pages{font-family:arial;color:#AABB12;font-size:12pt}
+price{font-family:arial;color:blue;font-size:12pt}
+Output:
+WEEK-5
+//Program to Create Table in Mysql
+import java.sql.*;
+public class CreateTable
+{
+public static void main(String args[])
+{
+try
+{
+//com.mysql.cj.jdbc.DriverClass.forName("com.mysql.jdbc.D
+river");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root","");
+Statementst=con.createStatement();
+st.executeUpdate("create table csed ( rollno varchar(10), name varchar(20))");
+System.out.println("TableCreated");
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
+//download mysql-connector-java-5.1.48 zip file - extract
+//mysql-connector-java-5.0.8-bin.jar and copy in
+//C:\Program Files (x86)\Java\jre7\lib\ext folder of java
+//set classpath for the jar file as
+// classpath => C:\Program Files (x86)\Java\jre7\lib\ext\mysql-connector-java-5.1.48-bin.jar;.;
+Output: Table Created
+//Program to Insert Student Data
+import java.sql.*;
+import java.util.*;
+public class InsertTable
+{
+public static void main(String args[]) {
+try {
+Class.forName("com.mysql.jdbc.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentinfo","root","");
+Statement st=con.createStatement();
+// String qry = "INSERT INTO student(id,name,contact,address,avg) VALUES
+//(101,'Ramesh','123456789','Hyderabad',80)";
+//st.executeUpdate(qry);
+Scanner sc = new Scanner(System.in);
+System.out.println("Eneter the student details");
+int sid = sc.nextInt();
+String sname= sc.next();
+String scontact= sc.next();
+String saddr = sc.next();
+int savg=sc.nextInt();
+String qry = "INSERT INTO student(id,name,contact,address,avg) VALUES
+("+sid+",'"+sname+"','"+scontact+"','"+saddr+"',"+savg+")";
+st.executeUpdate(qry);
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+System.out.println("Row Inserted");
+}
+}
+Output: RowInserted
+//Program to Retrieve Data From Database
+import java.sql.*;
+public class GetTable
+{
+public static void main(String args[])
+{
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentinfo","root","");
+Statement st=con.createStatement();
+ResultSetrs = st.executeQuery("select * from student");
+System.out.println("The Employee Details are \n");
+while(rs.next())
+{
+System.out.println(rs.getInt(1)+":"+rs.getString(2)+":"+ rs.getString(3)+":"+rs.getString(4) +":" +
+rs.getInt(5));
+}
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
+//Program to Update a field in Database
+import java.sql.*;
+import java.util.*;
+public class UpdateTable
+{
+public static void main(String args[])
+{
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentinfo","root","");
+Statement st=con.createStatement();
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the Studen Id to Update contact info");
+int sid = sc.nextInt();
+System.out.println("Enter the Phone no to update");
+String scontact = sc.next();
+String qry = "UPDATE student SET contact='"+scontact+"' WHERE id="+sid+"";
+//String qry = "UPDATE student SET contact='123456' WHERE id=1234;
+st.executeUpdate(qry);
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+System.out.println("Row Updated");
+}
+}
+ OUTPUT:
+Row Updated
+//Program to delete a Record in Table
+import java.sql.*;
+import java.util.*;
+public classDeleteTable
+{
+public static void main(String args[])
+{
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/studentinfo","root","");
+Statement st=con.createStatement();
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the record to be deleted");
+int sid = sc.nextInt();
+String qry = "DELETE FROM student WHERE id="+sid+"";
+st.executeUpdate(qry);
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+System.out.println("Row Effected / Deleted");
+}
+}
+OUTPUT:
+Row Effected / Deleted 
+Week-6
+//Program to Create Table in Mysql - using PreparedStatement
+import java.sql.*;
+public class CreateTable
+{
+public static void main(String args[])
+{
+try
+{
+//com.mysql.cj.jdbc.Driver
+Class.forName("com.mysql.jdbc.Driver");
+Connection con=DriverManager.getConnection(
+"jdbc:mysql://localhost:3306/studentinfo","root","");
+Statement st=con.createStatement();
+String qry="create table student1 ( id int(5), name varchar(20), contact
+varchar(10), address varchar(20), avg int(10) )";
+PreparedStatementps = con.prepareStatement(qry);
+ps.executeUpdate();
+System.out.println("Table Created");
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
+OUTPUT:
+//Program to Insert Student Data - using PreparedStatement
+import java.sql.*;
+import java.util.*;
+public class InsertTable{
+public static void main(String args[]) {
+try { 
+Class.forName("com.mysql.jdbc.Driver");
+Connection con = DriverManager.getConnection
+("jdbc:mysql://localhost:3306/studentinfo","root","");
+Statement st=con.createStatement();
+Scanner sc = new Scanner(System.in);
+System.out.println("Eneter the student details");
+int sid = sc.nextInt();
+String sname= sc.next();
+String scontact= sc.next();
+String saddr = sc.next();
+int savg=sc.nextInt();
+String qry = "INSERT INTO student(id,name,contact,address,avg) VALUES (?,?,?,?,?)";
+PreparedStatementps = con.prepareStatement(qry);
+ps.setInt(1,sid);
+ps.setString(2,sname);
+ps.setString(3,scontact);
+ps.setString(4,saddr);
+ps.setInt(5,savg);
+ps.executeUpdate();
+con.close();
+}
+catch(Exception e){
+System.out.println(e); }
+System.out.println("Row Inserted");
+} }
+OUTPUT:
+//Program to retrieve Data from Database-using prepared statement
+import java.sql.*;
+import java.util.*;
+public class GetTable{
+public static void main(String args[]) {
+try {
+Class.forName("com.mysql.jdbc.Driver");
+Connection con = DriverManager.getConnection
+("jdbc:mysql://localhost:3306/studentinfo","root","");
+Scanner sc = new Scanner(System.in); 
+System.out.println("Enter the average");
+int savg = sc.nextInt();
+//up to given average
+String qry = "select * from student where avg <= ?";
+PreparedStatementps = con.prepareStatement(qry);
+ps.setInt(1,savg);
+ResultSetrs = ps.executeQuery();
+System.out.println("The Student Details are \n");
+while(rs.next()) {
+System.out.println(rs.getInt(1)+":"+rs.getString(2)+":"+
+rs.getString(3)+":"+rs.getString(4) +":" + rs.getInt(5));
+//rs.getInt("id"); //rs.getString("name");
+}
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+} }
+}
+OUTPUT:
+//Program to update a field in Database-using PreparedStatement
+import java.sql.*;
+import java.util.*;
+public class UpdateTable{
+public static void main(String args[]) {
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+Connection con=DriverManager.getConnection
+("jdbc:mysql://localhost:3306/studentinfo","root","");
+Statement st=con.createStatement();
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the Studen Id to Update contact info");
+int sid = sc.nextInt();
+System.out.println("Enter the Phone no to update"); 
+String scontact = sc.next();
+String qry = "UPDATE student SET contact=? WHERE id=?";
+PreparedStatementps = con.prepareStatement(qry);
+ps.setString(1,scontact);
+ps.setInt(2,sid);
+ps.executeUpdate();
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+System.out.println("Row Updated");
+} }
+OUTPUT:
+//Program to Delete a Record in Table-using PreparedStatement
+import java.sql.*;
+import java.util.*;
+public class DeleteTable{
+public static void main(String args[])
+{
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+Connection con=DriverManager.getConnection
+("jdbc:mysql://localhost:3306/studentinfo","root","");
+Statement st=con.createStatement();
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the record to be deleted");
+int sid = sc.nextInt();
+String qry = "DELETE FROM student WHERE id=?";
+PreparedStatementps = con.prepareStatement(qry);
+ps.setInt(1,sid);
+ps.executeUpdate(); 
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+System.out.println("Row Effected / Deleted");
+}
+}
+OUTPUT:
+//CallableStatement Demo - insertion - with Procedure Call
+import java.sql.*;
+import java.util.*;
+public class CallableInsert
+{
+public static void main(String args[]) {
+try {
+Class.forName("com.mysql.jdbc.Driver");
+Connection con=DriverManager.getConnection
+("jdbc:mysql://localhost:3306/studentinfo","root","");
+CallableStatementst=con.prepareCall("{call INSERTDATA(?,?,?,?,?)}");
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter Student ID");
+int id= sc.nextInt();
+System.out.println("Enter Student Name");
+String name = sc.next();
+System.out.println("Enter Student Contact");
+String contact= sc.next();
+System.out.println("Enter Student Address");
+String addr = sc.next();
+System.out.println("Enter Student Average");
+int avg = sc.nextInt();
+st.setInt(1,id); 
+st.setString(2,name);
+st.setString(3,contact);
+st.setString(4,addr);
+st.setInt(5,avg);
+st.executeUpdate();
+con.close(); }
+catch(Exception e)
+{
+System.out.println(e);
+}
+System.out.println("Row Inserted");
+}
+}
+WEEK-7
+<! - -Servlet program to read the parameters from user interface and display welcome message.- ->
+Index.html
+<form action="details" method="get">
+User Name: <input type="text" name="uname"><br>
+User Age: <input type="text" name="uage"><br>
+<input type="submit" value="submit">
+</form>ServletRequest.ja
+va import
+javax.servlet.http.*; import
+javax.servlet.*; import
+java.io.*;
+public class ServletRequest extends HttpServlet{
+public void doGet(HttpServletRequestreq,HttpServletResponse res) throws
+ServletException,IOException
+{
+res.setContentType("text/html");
+PrintWriterpwriter=res.getWriter(); String
+name = req.getParameter("uname"); String
+age = req.getParameter("uage");
+pwriter.println("!Welcome: "+name);
+pwriter.println("Your Age: "+age);
+pwriter.close();
+}
+}
+web.xml(Deployment Descriptor)
+<web-app>
+<servlet>
+<servlet-name>ServletRequest</servlet-name>
+<servlet-class>ServletRequest</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ServletRequest</servlet-name>
+<url-pattern> /details</ url-pattern >
+</servlet-mapping>
+</web-app>
+Follow the below steps to deploy your application in tomcat server:
+Step1: Create an application folder named ServletRequest
+Step2: ServletRequest folder should contains index.html program, WEB-INF folder and src folder
+optional to store Servlet code
+Step3: WEB-INF folder should contain classes folder and web.xml file
+Step4: Compile your Servlet code and place the compiled .class file in classes folder under WEB-INF
+folder
+Step5: Place the total application folder into the C:\xampp\tomcat\webapps folder
+Step6: On Xampp control panel and start tomcat service , open the browser and type localhost:8080 in
+url bar
+Step7: Under tomcat server click on manager apps where you can view your application
+Screens: 1. On Tomcat web server and click Manager App
+
+<! - -Servlet program to read initialization parameters using ServletConfig and ServletContext
+object. - - >
+ServletContext (DemoConfig.java)
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.util.Enumeration;
+public class DemoConfig extends HttpServlet {
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws
+ServletException, IOException
+{
+response.setContentType("text/html;charset=UTF-8");
+PrintWriterpwriter = response.getWriter();
+ServletConfigsc=getServletConfig();
+Enumeration<String> e=sc.getInitParameterNames();
+String str;
+while(e.hasMoreElements()) {
+str=e.nextElement();
+pwriter.println("<br>Param Name: "+str);
+pwriter.println(" value: "+sc.getInitParameter(str));
+}
+}
+}
+web.xml(Deployment Descriptor)
+<web-app>
+<servlet>
+<servlet-name>DemoConfig</servlet-name>
+<servlet-class>DemoConfig</servlet-class>
+<init-param>
+<param-name>MyName</param-name>
+<param-value>DGanesh</param-value>
+</init-param>
+<init-param>
+<param-name>MyWebsite</param-name>
+<param-value>vardhaman.org</param-value>
+</init-param>
+</servlet>
+<servlet-mapping>
+<servlet-name>DemoConfig</servlet-name>
+<url-pattern>/DemoConfig</url-pattern >
+</servlet-mapping>
+</web-app>
+index.html
+<p>Click the below link to execute Servlet Configure
+<a href="DemoConfig"> Click Here </a>
+</p>
+Week – 08
+<! - -Servlet program to work with HttpSessionObject..- ->
+HttpSessionObject :
+LoginServlet.java
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+public class LoginServlet extends HttpServlet {
+ protected void doPost(HttpServletRequest request, HttpServletResponse response)
+ throws ServletException, IOException {
+response.setContentType("text/html");
+PrintWriter out=response.getWriter();
+request.getRequestDispatcher("link.html").include(request, response);
+ String name=request.getParameter("name");
+ String password=request.getParameter("password");
+ if(password.equals("admin123")){
+out.print("Welcome, "+name);
+HttpSession session=request.getSession();
+session.setAttribute("name",name);
+ }
+else{
+out.print("Sorry, username or password error!");
+request.getRequestDispatcher("login.html").include(request, response);
+ }
+out.close();
+ } } 
+
+LogoutServlet.java
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+public class LogoutServlet extends HttpServlet {
+ protected void doGet(HttpServletRequest request, HttpServletResponse response)
+ throws ServletException, IOException {
+response.setContentType("text/html");
+PrintWriter out=response.getWriter();
+request.getRequestDispatcher("link.html").include(request, response);
+HttpSession session=request.getSession();
+session.invalidate();
+out.print("You are successfully logged out!");
+out.close();
+ }
+}
+ProfileServlet.java
+import java.io.IOException;
+import java.io.PrintWriter; 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+public class ProfileServlet extends HttpServlet {
+ protected void doGet(HttpServletRequest request, HttpServletResponse response)
+ throws ServletException, IOException {
+response.setContentType("text/html");
+PrintWriter out=response.getWriter();
+request.getRequestDispatcher("link.html").include(request, response);
+HttpSession session=request.getSession(false);
+ if(session!=null){
+ String name=(String)session.getAttribute("name");
+out.print("Hello, "+name+" Welcome to Profile");
+ }
+else{
+out.print("Please login first");
+request.getRequestDispatcher("login.html").include(request, response);
+} out.close();
+ }
+}
+Web.xml
+<web-app >
+<servlet>
+<description></description>
+<display-name>LoginServlet</display-name>
+<servlet-name>LoginServlet</servlet-name>
+<servlet-class>LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>LoginServlet</servlet-name>
+<url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>ProfileServlet</display-name>
+<servlet-name>ProfileServlet</servlet-name>
+<servlet-class>ProfileServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ProfileServlet</servlet-name>
+<url-pattern>/ProfileServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>LogoutServlet</display-name>
+<servlet-name>LogoutServlet</servlet-name>
+<servlet-class>LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>LogoutServlet</servlet-name>
+<url-pattern>/LogoutServlet</url-pattern>
+</servlet-mapping>
+</web-app>
+Index.html
+<html>
+<head>
+<title>Servlet Login Example</title>
+</head>
+<body>
+<h1>Login App using HttpSession</h1>
+<a href="login.html">Login</a>|
+<a href="LogoutServlet">Logout</a>|
+<a href="ProfileServlet">Profile</a>
+</body>
+</html>
+Link.html
+<a href="login.html">Login</a> |
+<a href="LogoutServlet">Logout</a> |
+<a href="ProfileServlet">Profile</a>
+<hr>
+Login.html
+<form action="LoginServlet" method="post">
+Name:<input type="text" name="name"><br>
+Password:<input type="password" name="password"><br>
+<input type="submit" value="login">
+</form>
+<! - -Servlet program to work with Cookie..- ->
+Cookie
+Web.xml :
+<web-app>
+<servlet>
+<servlet-name>ListandAddCookie</servlet-name>
+<servlet-class>ListandAddCookie</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ListandAddCookie</servlet-name>
+<url-pattern>/ListandAddCookie</url-pattern>
+</servlet-mapping>
+</web-app>
+Index.html:
+<a href="ListandAddCookie">Click Here</a>
+ListandAddCookie.java
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+public class ListandAddCookie extends HttpServlet {
+protected void doGet(HttpServletRequest request, HttpServletResponse response)
+throws ServletException, IOException {
+response.setContentType("text/html");
+PrintWriter out = response.getWriter();
+Cookie cookie = null;
+out.println("<html><body>"+
+"<form method='get' action=''>"+
+"Name:<input type='text' name='user' /><br/>"+
+"Password:<input type='password' name='pass'><br/>"+
+"<input type='submit' value='submit'>"+
+"</form>");
+String name = request.getParameter("user");
+String pass = request.getParameter("pass");
+if(!pass.equals("") || !name.equals(""))
+{
+Cookie ck = new Cookie(name,pass);
+response.addCookie(ck);
+}
+Cookie[] cookies = request.getCookies();
+if( cookies != null ){
+out.println("<h2> Found Cookies Name and Value</h2>");
+for (int i = 0; i<cookies.length; i++){
+cookie = cookies[i];
+out.print("Cookie Name : " + cookie.getName() + ", ");
+out.print("Cookie Value: " + cookie.getValue()+"<br/>");
+}
+}
+out.println("</body></html>");
+}
+}
+<! - - Servlet program to insert the form contents into the database using JDBC...- ->
+ServletRequestjdbc.java
+import javax.servlet.http.*;
+import javax.servlet.*;
+import java.io.*;
+import java.sql.*;
+public class ServletRequestjdbc extends HttpServlet{
+ public void doGet(HttpServletRequestreq,HttpServletResponse res) throws 
+ServletException,IOException
+ {
+res.setContentType("text/html");
+PrintWriter out=res.getWriter();
+String name = req.getParameter("uname");
+ String pwd= req.getParameter("upass");
+ try
+ {
+Class.forName("com.mysql.jdbc.Driver");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root","");
+PreparedStatementps=con.prepareStatement("INSERT INTO login(uname,upass) VALUES(?,?)");
+ps.setString(1,name);
+ps.setString(2,pwd);
+int i=ps.executeUpdate();
+if(i>0)
+{
+out.println("Login Succesfully");
+}
+ }
+catch(Exception e)
+{
+e.printStackTrace();
+}
+ }
+}
+Web.xml
+<web-app>
+<servlet>
+<servlet-name>ServletRequestjdbc</servlet-name>
+<servlet-class>ServletRequestjdbc</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ServletRequestjdbc</servlet-name>
+<url-pattern>/jdbc</url-pattern>
+</servlet-mapping>
+</web-app>
+Index.html
+<form action="jdbc" method="get" >
+UserName:<input type="text" name="uname"></br>
+Password:<input type="password" name="upass"></br>
+<input type="submit" value="login">
+</form>
+Welcome.html
+<p>Welcome</p>
+<a href="index.html">click here</a>
+WEEK-9
+a. JSP Program to print multiplication table
+Index.html
+<html>
+<body>
+<h2>Enter Any 2 Numbers !!</h2>
+<form action="Table2.jsp" method="post">
+First No: <input type="text" name="fno"><br>
+Second No: <input type="text" name="sno"><br>
+<input type="submit" value="Show Tables">
+</form>
+<h5>VCE-WT</h5>
+</body>
+Table2.jsp
+<html>
+<body>
+<%
+int num1=Integer.parseInt(request.getParameter("fno"));
+int num2=Integer.parseInt(request.getParameter("sno"));
+int range=0;%>
+<h5><center>TABLES FROM <%=num1 %> to <%=num2 %></center></h5>
+<table cellpadding=0 cellspacing=0 align='center' bgcolor='yellow' width=70% >
+<%
+try
+{
+for (int j = 1; j <= 10; j++) {
+%><tr><th>|</th><%
+for (range = num1; range <= num2; range++) { %><td align='center'><%
+out.println(range);
+%></td><tdalign='center'><%
+out.println("*");
+%></td><tdalign='center'><%
+out.println(j);
+%></td><tdalign='center'><%
+out.println(" = ");
+%></td><tdalign='center'><%
+out.println(range * j);
+%><th>|</th><%
+}
+%></tr><% } }
+catch(Exception e) {
+out.println("Error"); }
+%>
+</table>
+</body>
+</html>
+Output:
+Step1: Create a folder name multiplication and place in the following path if you xamppis installed in c drive
+path: C:\xampp\tomcat\webapps\ROOT
+Step2: On Xampp Control Panel, on tomcat service, mysql and Apache
+Step3: On browser and type the following in url to run the program
+http://localhost:8080/multiplication/
+b. JSP program to handle the exception
+The exception is normally an object that is thrown at runtime. Exception Handling is the process to handle the
+runtime errors. There may occur exception any time in your web application. So handling exceptions is a safer
+side for the web developer. In JSP, there are three ways to perform exception handling:
+1. By errorPage and isErrorPage attributes of page directive
+2. By <error-page> element in web.xml file
+3. try catch block
+Let us do it by 1st and 3rd approach
+1St Approach
+In this case, you must define and create a page to handle the exceptions, as in the error.jsp page. The pages where
+may occur exception, define the errorPage attribute of page directive, as in the process.jsp page.
+There are 3 files:
+o index.jsp for input values
+o process.jsp for dividing the two numbers and displaying the result
+o error.jsp for handling the exception
+index.jsp
+<form action="process.jsp">
+No1:<input type="text" name="n1" /><br/><br/>
+No1:<input type="text" name="n2" /><br/><br/>
+<input type="submit" value="divide"/>
+</form>
+process.jsp
+<%@ page errorPage="error.jsp" %>
+<%
+String num1=request.getParameter("n1");
+String num2=request.getParameter("n2");
+int a=Integer.parseInt(num1);
+int b=Integer.parseInt(num2);
+int c=a/b;
+out.print("division of numbers is: "+c);
+%>
+error.jsp
+<%@ page isErrorPage="true" %>
+<h3>Sorry an exception occured!</h3>
+Exception is: <%= exception %>
+Output
+3rd Approach: Using Try...Catch Block
+<html>
+<head>
+<title>Try...Catch Example</title>
+</head>
+<body>
+<%
+ try {
+ int i = 1;
+i = i / 0;
+out.println("The answer is " + i);
+ }
+ catch (Exception e) {
+out.println("An exception occurred: " + e.getMessage());
+ }
+ %>
+</body>
+</html>
+Output:
+WEEK-10
+a. JSP Program to access bean information using useBean tag
+Index.jsp
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>useBean, getProperty and setProperty example</title>
+</head>
+<body>
+<form action="userdetails.jsp" method="post">
+User Name: <input type="text" name="username"><br>
+User Password: <input type="password" name="password"><br>
+User Age: <input type="text" name="age"><br>
+<input type="submit" value="register">
+</form>
+</body>
+</html>
+Userdetails.jsp
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<jsp:useBean id="userinfo" class="ganesh.Details"></jsp:useBean>
+<jsp:setProperty property="*" name="userinfo"/>
+You have enterted below details:<br>
+Your Name: <jsp:getProperty property="username" name="userinfo"/><br>
+Your Password:<jsp:getProperty property="password" name="userinfo"/><br>
+Your Age:<jsp:getProperty property="age" name="userinfo" /><br>
+JavaBean class: Details.java
+package ganesh;
+public class Details {
+public Details() {
+ }
+ private String username;
+ private int age;
+ private String password;
+public String getUsername() {
+return username;
+}
+public void setUsername(String username) {
+this.username = username;
+}
+public int getAge() {
+return age;
+}
+public void setAge(int age) {
+this.age = age;
+}
+public String getPassword() {
+return password;
+}
+public void setPassword(String password) {
+this.password = password;
+}
+}
+Output:
+b. JSP Program to authenticate the login details. If user is valid forward the control to success.html otherwise
+forward to fail.html.
+Index.jsp
+<%@ page import="java.sql.*" %>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Home</title>
+</head>
+<body>
+<%
+Connection con= null;
+PreparedStatementps = null;
+ResultSetrs = null;
+String driverName = "com.mysql.jdbc.Driver";
+String url = "jdbc:mysql://localhost:3306/student";
+String user = "root";
+String password = "";
+String sql = "select usertype from userdetail";
+try {
+Class.forName(driverName);
+con = DriverManager.getConnection(url, user, password);
+ps = con.prepareStatement(sql);
+rs = ps.executeQuery();
+%>
+<form method="post" action="login.jsp">
+<center><h2 style="color:green">JSP Login Example</h2></center>
+<table border="1" align="center">
+<tr>
+<td>Enter Your Name :</td>
+<td><input type="text" name="name"/></td>
+</tr>
+<tr>
+<td>Enter Your Password :</td>
+<td><input type="password" name="password"/></td>
+</tr>
+<tr>
+<td>Select UserType</td>
+<td><select name="usertype">
+<option value="select">select</option>
+<%
+while(rs.next())
+{
+String usertype = rs.getString("usertype");
+%>
+<option value=<%=usertype%>><%=usertype%></option>
+<%
+}
+}
+catch(SQLExceptionsqe)
+{
+out.println("home"+sqe);
+}
+%>
+</select>
+</td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="submit"/></td>
+</table>
+</form>
+</body>
+</html>
+Login.jsp
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.Connection"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Login</title>
+</head>
+<body>
+<%! String userdbName;
+String userdbPsw;
+String dbUsertype;
+%>
+<%
+Connection con= null;
+PreparedStatementps = null;
+ResultSetrs = null;
+String driverName = "com.mysql.jdbc.Driver";
+String url = "jdbc:mysql://localhost:3306/student";
+String user = "root";
+String dbpsw = "";
+String sql = "select * from userdetail where name=? and password=? and usertype=?";
+String name = request.getParameter("name");
+String password = request.getParameter("password");
+String usertype = request.getParameter("usertype");
+if((!(name.equals(null) || name.equals("")) && !(password.equals(null) ||
+password.equals(""))) && !usertype.equals("select"))
+{
+try{
+Class.forName(driverName);
+con = DriverManager.getConnection(url, user, dbpsw);
+ps = con.prepareStatement(sql);
+ps.setString(1, name);
+ps.setString(2, password);
+ps.setString(3, usertype);
+rs = ps.executeQuery();
+if(rs.next())
+{
+userdbName = rs.getString("name");
+userdbPsw = rs.getString("password");
+dbUsertype = rs.getString("usertype");
+if(name.equals(userdbName) &&password.equals(userdbPsw) &&usertype.equals(dbUsertype))
+{
+session.setAttribute("name",userdbName);
+session.setAttribute("usertype", dbUsertype);
+response.sendRedirect("welcome.jsp");
+}
+}
+else
+response.sendRedirect("error.jsp");
+rs.close();
+ps.close();
+}
+catch(SQLExceptionsqe)
+{
+out.println(sqe);
+}
+}
+else
+{
+%>
+<center><p style="color:red">Error In Login</p></center>
+<%
+getServletContext().getRequestDispatcher("index.jsp").include(request,
+response);
+}
+%>
+</body>
+</html>
+Welcome.jsp
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Welcome</title>
+</head>
+<body>
+<p>Welcome, <%=session.getAttribute("name")%></p>
+<p><a href="logout.jsp">Logout</a>
+</body>
+</html>
+Error.jsp
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Login Error</title>
+</head>
+<body>
+<center><p style="color:red">Sorry, your record is not available.</p></center>
+<%
+getServletContext().getRequestDispatcher("/index.jsp").include(request, response);
+%>
+</body>
+</html>
+Logout.jsp
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Logout</title>
+</head>
+<body>
+<% session.invalidate(); %>
+<p>You have been successfully logout</p>
+</body>
+</html>
+Week – 11
+• PHP program to work with associative arrays.
+• PHP program to find factorial using Recursion.
+• PHP Program to display the following.
+a) Sum of array elements.
+b) Product of array elements
+c) Display array elements in sorted order
+d) Display array elements in reverse sorted order
+<html>
+<head>
+<title>
+PHP programming
+</title>
+<body>
+<?php
+echo "Associative Arrays";
+echo "<br>";
+echo "<br>";
+$players=array("virat"=>"12000","dhoni"=>"100000","bumrah"=>"500");
+echo "Virat score is ".$players['virat']."runs";
+echo "<br>";
+print_r($players);
+echo "<br>";
+echo "Factorial using Recursion:";
+echo "<br>";
+echo "<br>";
+function fact($n){
+if ($n < 2)
+return 1;
+ else
+return ($n*fact($n-1));
+}
+echo "Factorial of 10 is ".fact(10);
+ECHO "<br><br>";
+echo "Sum of array elements is";
+echo "<br>";
+$a=Array(10,12,14,13,15);
+echo array_sum($a);
+echo "<br><br>";
+echo "Product of array elements is";
+echo "<br>";
+echo array_product($a);
+echo "<br>";
+echo "<br>";
+echo "array elements in sorted order is ";
+echo "<br>";
+sort($a);
+print_r($a);
+echo "<br>";
+echo "<br>";
+echo "array elements in reverse sorted order is ";
+echo "<br>";
+rsort($a);
+print_r($a);
+?>
+</body>
+ </html>
+OUTPUT:
+WEEK – 12
+<!-- Creating Database through PHP Script (create.php) -->
+<html>
+<body>
+<h2 style = "color:red">Creating database through PHP script</h2>
+<?php
+$con = mysqli_connect('localhost','root','');
+if(!$con){
+die('Error in Connection'.mysqli_error());
+}
+else{
+echo "Connection to server was successfull";
+}
+$dbname = "mydb";
+$qry = "CREATE DATABASE $dbname";
+mysqli_query($con,$qry);
+echo "<br>Database Created with name $dbname";
+$sel = mysqli_select_db($con, $dbname);
+if($sel)
+echo"<br>Database $dbname is selected successfully";
+else
+echo"<br>Database $dbname not selected";
+$qry1 = "CREATE TABLE login1( uname varchar(40) NOT NULL, pword varchar(20) NOT NULL)";
+$tab = mysqli_query($con, $qry1);
+if($tab)
+echo "<br> Login Table Created";
+else
+echo "<br>Login Table not created";
+mysqli_close($con);
+?>
+</body>
+</html>
+OUTPUT :
+<!--Login Details Entry Form ->login.php page (home page)-->
+<html>
+<body>
+<form name = "f1" method = "post" action = "insert_user.php">
+<center>
+<table border = "2">
+<caption style = "color:red">Register Window</caption>
+<tr>
+<td>Username :</td>
+<td><input type = "text" name = "un" size = 30></td>
+</tr>
+<tr>
+<td>Password :</td>
+<td><input type = "password" name = "pwd" size = 30></td>
+</tr>
+</table><br>
+<input type = "Submit" value = "Insert User Details">
+<input type = "reset" value = "Clear"><br><br>
+</form>
+<a href = "displayusers.php">Display Users</a>
+<a style = "color:red" href = "verifyuser.php">Existing User Only</a>
+<a href = "updateform.php"> Update Password</a>
+<a href = "deleteform.php"> Delete User</a>
+</center>
+</body>
+</html>
+OUTPUT :
+ <!--Inserting Users Data : Code for insertuser.php -->
+ <html>
+ <body>
+<?php
+$con = mysqli_connect('localhost','root','','mydb');
+if(!$con)
+die('Error in Connection'.mysqli_error());
+$sel = mysqli_select_db($con, 'mydb');
+if(!$sel)
+echo "<br> Database not selected";
+$name = $_POST['un'];
+$pwd = $_POST['pwd'];
+$qr = mysqli_query($con, "SELECT COUNT(1) from login1 where uname = '$name'");
+$row = mysqli_fetch_array($qr);
+if($row[0] >= 1){
+echo "
+<script>
+alert('User Already exists');
+window.location.href = 'login.php';
+ </script>";
+}
+else{
+$qry2 = "INSERT INTO login1(uname,pword) VALUES('$name','$pwd')";
+$ins = mysqli_query($con, $qry2);
+if(!$ins)
+echo"<br>Login data Not inserted successfully";
+echo "<br> User $name data inserted successfully";
+echo "<br><a href = 'login.php'>Move to Home page</a>";
+}
+mysqli_close($con);
+?>
+ </body>
+ </html>
+ OUTPUT :
+ <!—Retriving Users -Displaying users data : displayusers.php-->
+ <html>
+ <body>
+<?php
+$con = mysqli_connect('localhost','root','','mydb');
+if(!$con)
+{
+die('Error in connection'.mysqli_error());
+}
+$sel = mysqli_select_db($con, 'mydb');
+if(!$sel)
+echo"<br> Database not selected";
+$res = mysqli_query($con, "SELECT * from login1");
+echo"<center>";
+echo"<table border = 2>";
+echo "<caption> Users Details</caption>";
+echo "<tr><th>USER NAME</th><th>PASSWORD</th></tr>";
+while($row = mysqli_fetch_array($res))
+{ echo "<tr><td>";
+echo $row['uname'];
+echo "</td>";
+echo "<td>";
+echo $row['pword'];
+echo "</td></tr>";}
+echo "</table>";
+echo "</center>";
+echo "<br><a href = 'login.php'>Move to Home Page</a>";
+mysqli_close($con);?>
+ </body>
+ </html>
+ OUTPUT :
+ <!--Update a field password updateform.php-->
+ <html>
+ <body>
+<form name = "f2" method = "post" action = "update.php">
+<center>
+<table border = "2">
+<caption style = "color:red">Regester Window</caption>
+<tr>
+<td>User Name :</td>
+<td><input type = "text" name = "unn" size = 30></td>
+</tr>
+<tr>
+<td>Old Password :</td>
+<td><input type = "password" name = "opw" size = 30></td>
+</tr>
+<tr>
+<td> New Password :</td>
+<td><input type = "password" name = "npw" size = 30></td>
+</tr>
+<tr>
+<td></td>
+<tdalign = "left">
+<input type = "Submit" value = "UPDATE">
+<input type = "reset" value = "Clear">
+</td>
+</tr>
+</table></center></form>
+ </body>
+ </html>
+OUTPUT :
+ <!--Update a record from users data : Code for update.php --><
+ <html>
+ <body>
+<?php
+$con = mysqli_connect('localhost','root','','mydb');
+if(!$con)
+die('Error in Connection'.mysqli_error());
+$sel = mysqli_select_db($con, 'mydb');
+if(!$sel)
+echo "<br> Database is selected successfully";
+$un = $_POST['unn'];
+$old = $_POST['opw'];
+$ne = $_POST['npw'];
+mysqli_query($con, "UPDATE login1 SET pword = '$ne' WHERE pword = '$old'");
+echo "<br>Updated User Data Successfully";
+echo "<br><a href = 'login.php'>Move to Home Page</a>";
+mysqli_close($con);
+?>
+ </body>
+ </html>
+ OUTPUT :
+ <!--delete a USER DATA Form deleteform.php -->
+ <html>
+ <body>
+<form name = "f2" method = "post" action = "deleteuser.php">
+<center>
+<table border = 2>
+<caption style = "color:red">Register Window</caption>
+<tr>
+<td> User Name :</td>
+<td><input type = "text" name = "user" size = 30></td>
+</tr>
+<tr>
+<tdalign = "left">
+<input type = "submit" value = "Delete">
+<input type = "reset" value = "Clear">
+</td>
+</tr>
+</table>
+</center>
+</form>
+</body>
+ </html>
+OUTPUT :
+ <!--Deleta a record from users data : Code for deleteuser.php -->
+ <html>
+<body>
+<?php
+$con = mysqli_connect('localhost','root','','mydb');
+if(!$con)
+die('Error in Connection'.mysqli_error());
+$sel = mysqli_select_db($con, 'mydb');
+if(!$sel)
+echo "<br> Database not selected";
+$name = $_POST['user'];
+mysqli_query($con, "DELETE from login1 where uname = '$name'");
+echo"<br>Deleted User Data Successfully";
+echo"<br><a href = 'login.php'>Move to home page</a>";
+mysqli_close($con);
+?>
+</body>
+ </html>
+ OUTPUT :
+ <!--Verify User form: Code for verifyuser.php -->
+ <html>
+<body>
+<form name = "f2" method = "post" action = "verify.php">
+<center>
+<table border = "2">
+<caption style = "color:red">verify user</caption>
+<tr>
+<td> User Name</td>
+<td><input type = "text" name = "un" size = 30 required = "required"></td>
+</tr>
+<tr>
+<td>Password :</td>
+<td><input type = "password" name = "pw" size = 30 required = "required"></td>
+</tr>
+<tr>
+<tdalign = "left" colspan = 2>
+<input type = "Submit" value = "verify me">
+</tr>
+</table>
+</center></form>
+</body>
+ </html>
+OUTPUT:
+ <!--verifying user in server -verify.php-->
+ <html>
+<body>
+<?php
+$name = $_POST['un'];
+$pwd = $_POST['pw'];
+$con = mysqli_connect('localhost','root','','mydb');
+if(!$con)
+die('Error in Connection'.mysqli_error());
+$sel = mysqli_select_db($con, 'mydb');
+if(!$sel)
+echo "<br>Database not Selected";
+$res = mysqli_query($con, "SELECT * from login1");
+while($row = mysqli_fetch_array($res))
+{
+if(strcmp($row['uname'], $name) == 0 &&strcmp($row['pword'], $pwd) == 0)
+{
+echo "Welcome $name";
+break;
+}
+}
+echo "<br><a href = 'login.php'>Move to Home Page</a>";
+mysqli_close($con);
+?>
+</body>
+ </html>
+OUTPUT :
